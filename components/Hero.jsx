@@ -172,19 +172,26 @@ export default function Hero() {
         {/* Quick Action Buttons */}
         <div
           style={{ '--seq-delay': '2350ms' }}
-          className="hero-seq-item pt-2 flex flex-col min-[480px]:flex-row items-center justify-center gap-3 w-full max-w-xs min-[480px]:max-w-none mx-auto"
+          className="hero-seq-item pt-2 flex flex-col min-[480px]:flex-row flex-wrap items-center justify-center gap-3 w-full max-w-xs min-[480px]:max-w-none mx-auto"
         >
           <a
             href="#projects"
-            className="w-full min-[480px]:w-auto px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 text-white text-xs sm:text-sm font-semibold shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:scale-105 active:scale-95"
+            className="bubble-item w-full min-[480px]:w-auto px-6 py-3 rounded-full bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 text-white text-xs sm:text-sm font-semibold shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:scale-105 active:scale-95"
           >
             <i className="fa-solid fa-rocket" /> Explore Projects
           </a>
           <a
             href="#about"
-            className="w-full min-[480px]:w-auto px-6 py-3 rounded-full bg-slate-900/5 dark:bg-white/10 border border-slate-300 dark:border-white/20 text-slate-800 dark:text-gray-200 text-xs sm:text-sm font-semibold hover:bg-slate-900/10 dark:hover:bg-white/20 flex items-center justify-center gap-2 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:scale-105 active:scale-95"
+            className="bubble-item w-full min-[480px]:w-auto px-6 py-3 rounded-full bg-slate-900/5 dark:bg-white/10 border border-slate-300 dark:border-white/20 text-slate-800 dark:text-gray-200 text-xs sm:text-sm font-semibold hover:bg-slate-900/10 dark:hover:bg-white/20 flex items-center justify-center gap-2 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:scale-105 active:scale-95"
           >
             <i className="fa-solid fa-user-astronaut" /> Know About Me
+          </a>
+          <a
+            href="/resume.pdf"
+            download="Md_Rifatul_Islam_Resume.pdf"
+            className="bubble-item w-full min-[480px]:w-auto px-6 py-3 rounded-full bg-cyan-500/10 hover:bg-cyan-500/20 dark:bg-cyan-500/15 dark:hover:bg-cyan-500/25 border border-cyan-500/40 hover:border-cyan-400 text-cyan-600 dark:text-cyan-300 hover:text-cyan-500 dark:hover:text-cyan-200 text-xs sm:text-sm font-semibold shadow-md hover:shadow-[0_0_20px_rgba(6,182,212,0.4)] flex items-center justify-center gap-2 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:scale-105 active:scale-95"
+          >
+            <i className="fa-solid fa-download" /> Download Resume
           </a>
         </div>
       </div>
